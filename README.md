@@ -45,3 +45,20 @@ Run this code.
 4g. Then the copied SSH, could be pasted on your github settings. Settings > SSH & GPG > Add new SSH...
 
 4h. Retry pushing your code.
+
+## Setup your device
+
+Installing node through NVM is the right approach when dealing with technologies involving javascript. 
+
+For Macbook here are the steps:
+
+``brew upgrade``
+``brew install nvm``
+``echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc``
+``echo '[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"' >> ~/.zshrc``
+``echo '[ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix nvm)/etc/bash_completion.d/nvm"' >> ~/.zshrc``
+``source ~/.zshrc``
+
+Of course you can't get the specific version of node here, so you need to specify what node you would want to use:
+``nvm install 25.2.1``
+
